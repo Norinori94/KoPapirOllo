@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/colorHatter">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/ImageView_ember"
+        android:background="@drawable/kezdo"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/TextView_ember"
+        android:text="A te választásod"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorBetu"
+        android:layout_below="@id/ImageView_ember"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/ImageView_robot"
+        android:background="@drawable/kezdo"
+        android:layout_below="@id/TextView_ember"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:id="@+id/TextView_robot"
+        android:text="A robot választása"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorBetu"
+        android:layout_below="@id/ImageView_robot"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/TextView_eredmeny"
+        android:text="Eredmény:"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorBetu"
+        android:layout_below="@id/TextView_robot"
+        android:layout_centerHorizontal="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:id="@+id/LinearLayout_eredmeny"
+        android:gravity="center_horizontal"
+        android:layout_below="@id/TextView_eredmeny">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:id="@+id/TextView_eredmeny_ember"
+            android:text="Ember:"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorBetu"
+            android:gravity="right"
+            android:textAlignment="gravity"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:id="@+id/TextView_szam_ember"
+            android:text="0"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/colorBetu" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:id="@+id/TextView_eredmeny_robot"
+            android:text="Robot:"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorBetu"
+            android:gravity="right"
+            android:textAlignment="gravity"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:id="@+id/TextView_szam_robot"
+            android:text="0"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorBetu" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:id="@+id/LinearLayout_gombok"
+        android:gravity="center_horizontal"
+        android:layout_below="@id/LinearLayout_eredmeny">
+
+        <Button
+            android:layout_width="115dp"
+            android:layout_height="50dp"
+            android:id="@+id/Button_ko"
+            android:text="Kő"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:layout_marginRight="10dp" />
+
+        <Button
+            android:layout_width="115dp"
+            android:layout_height="50dp"
+            android:id="@+id/Button_papir"
+            android:text="Papír"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:layout_marginRight="10dp"/>
+
+        <Button
+            android:layout_width="115dp"
+            android:layout_height="50dp"
+            android:id="@+id/Button_ollo"
+            android:text="Olló"
+            android:textSize="25dp"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/TextView_erosseg"
+        android:text=""
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorBetu"
+        android:layout_below="@id/LinearLayout_gombok"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/TextView_vegeredmeny"
+        android:text=""
+        android:textSize="35dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorBetu"
+        android:layout_below="@id/TextView_erosseg"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
